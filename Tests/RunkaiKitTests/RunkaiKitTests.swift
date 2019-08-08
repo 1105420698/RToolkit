@@ -1,5 +1,5 @@
 import XCTest
-@testable import RToolkit
+@testable import RunkaiKit
 
 final class RunkaiKitTests: XCTestCase {
     func testExample() {

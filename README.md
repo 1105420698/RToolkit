@@ -1,3 +1,3 @@
-# RToolkit
+# RunkaiKit
 
-RToolkit allows developers to gain access to a lot of useful tools for Swift. 
+RunkaiKit allows developers to gain access to a lot of useful tools for Swift. 

@@ -1,7 +1,7 @@
 import XCTest
 
-import RToolkitTests
+import RunkaiKitTests
 
 var tests = [XCTestCaseEntry]()
-tests += RToolkitTests.allTests()
+tests += RunkaiKitTests.allTests()
 XCTMain(tests)

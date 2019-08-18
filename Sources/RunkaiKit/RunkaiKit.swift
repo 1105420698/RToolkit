@@ -4,6 +4,10 @@ import CloudKit
 #endif
 
 public class RunkaiKit {
+    public init() {
+        
+    }
+    
     #if canImport(CloudKit)
     /**
      Retrieve the corresponding record with the given id. Throws an error when encounters one.

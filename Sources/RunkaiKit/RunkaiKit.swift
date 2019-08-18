@@ -11,7 +11,7 @@ public class RunkaiKit {
         - id: The id that is going to be used.
         - public: The location of the target database can be either public or private.
       */
-    func retrieveCloudKitRecord(withIdentifier id: String, public: Bool) throws -> CKRecord  {
+    public func retrieveCloudKitRecord(withIdentifier id: String, public: Bool) throws -> CKRecord  {
         var record: CKRecord?
         var error: Error?
         let publicDatabase = CKContainer.default().publicCloudDatabase
@@ -44,7 +44,7 @@ public class RunkaiKit {
         - An error if it the process fails.
         - An error if the input is not a valid URL.
      */
-    func retrieveHTML(from url: String) -> String {
+    public func retrieveHTML(from url: String) -> String {
         guard let myURL = URL(string: url) else {
             print("Error: \(url) doesn't seem to be a valid URL")
             return "Error: \(url) doesn't seem to be a valid URL"
@@ -58,7 +58,7 @@ public class RunkaiKit {
         }
     }
     
-    func isIcloudAvailable() -> Bool {
+    public func isIcloudAvailable() -> Bool {
         var result: Bool?
         
         CKContainer.default().accountStatus(completionHandler: { accountStatus, error in
@@ -73,7 +73,7 @@ public class RunkaiKit {
     }
     #endif
     
-    func isFirstTimeLaunch() -> Bool {
+    public func isFirstTimeLaunch() -> Bool {
         if (UserDefaults.standard.bool(forKey: "HasLaunchedOnce")) {
            return false
         } else {

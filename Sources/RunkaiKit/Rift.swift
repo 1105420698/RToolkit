@@ -61,7 +61,7 @@ extension RKNode where T: Equatable {
 }
 
 /// R(unkai)(s)ift, made by Runkai, on Swift
-public class RKRift {
+public struct RKRift {
     /**
      Use this function to evaluate the `children` of a `RKNode`
      - warning:

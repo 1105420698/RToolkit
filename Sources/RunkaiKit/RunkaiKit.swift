@@ -3,8 +3,8 @@
 import CloudKit
 #endif
 
-public class RunkaiKit {
-    public init() {}
+/// The main structure of RunkaiKit where most of the general functions rests.
+public struct RunkaiKit {
     
     #if canImport(CloudKit)
     /**
@@ -60,6 +60,12 @@ public class RunkaiKit {
         }
     }
     
+    /**
+    Detect whether this is the device as an iCloud account logged on.
+    
+     Just place this function in the `viewDidLoad()` or `AppDelegate` of your app to use it.
+    - Returns: A `Bool` to indicate whether this is the device as an iCloud account logged on.
+    */
     public func isIcloudAvailable() -> Bool {
         var result: Bool?
         
@@ -77,8 +83,7 @@ public class RunkaiKit {
     
     /**
      Detect whether this is the first time this app ever launched.
-     - Returns:
-        - A `Bool` to indicate whether this is the first time this app ever launched.
+     - Returns: A `Bool` to indicate whether this is the first time this app ever launched.
      */
     public func isFirstTimeLaunch() -> Bool {
         if UserDefaults.standard.bool(forKey: "HasLaunchedOnce") {

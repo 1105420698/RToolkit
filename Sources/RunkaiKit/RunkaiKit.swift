@@ -4,9 +4,7 @@ import CloudKit
 #endif
 
 public class RunkaiKit {
-    public init() {
-        
-    }
+    public init() {}
     
     #if canImport(CloudKit)
     /**
@@ -77,11 +75,15 @@ public class RunkaiKit {
     }
     #endif
     
+    /**
+     Detect whether this is the first time this app ever launched.
+     - Returns:
+        - A `Bool` to indicate whether this is the first time this app ever launched.
+     */
     public func isFirstTimeLaunch() -> Bool {
-        if (UserDefaults.standard.bool(forKey: "HasLaunchedOnce")) {
+        if UserDefaults.standard.bool(forKey: "HasLaunchedOnce") {
            return false
         } else {
-           // This is the first launch ever
            UserDefaults.standard.set(true, forKey: "HasLaunchedOnce")
            UserDefaults.standard.synchronize()
            return true

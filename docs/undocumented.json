@@ -1,6 +1,75 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 12,
+      "symbol": "CalculationError.invalidOperator",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 13,
+      "symbol": "CalculationError.inputOverflow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 14,
+      "symbol": "CalculationError.invalidInput",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 19,
+      "symbol": "RKNode.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 20,
+      "symbol": "RKNode.parent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 22,
+      "symbol": "RKNode.children",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 23,
+      "symbol": "RKNode.operators",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 25,
+      "symbol": "RKNode.init(value:operators:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 30,
+      "symbol": "RKNode.add(child:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/Documents/XcodeProjects/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 50,
+      "symbol": "RKNode.search(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/runkai/Documents/XcodeProjects/RunkaiKit"
 }

@@ -8,26 +8,26 @@
 import Foundation
 
 /// A collection of errors that can be thrown when calculating with `RKNodes`.
-enum CalculationError: Error {
+public enum CalculationError: Error {
     case invalidOperator
     case inputOverflow
     case invalidInput
 }
 
 /// The main `RKNode` which supports an indefinite amount of `children`.
-class RKNode<T> {
-    var value: T
-    weak var parent: RKNode?
+public class RKNode<T> {
+    public var value: T
+    public weak var parent: RKNode?
     
-    var children: [RKNode] = []
-    var operators: String?
+    public var children: [RKNode] = []
+    public var operators: String?
     
-    init(value: T, operators: String?) {
+    public init(value: T, operators: String?) {
         self.value = value
         self.operators = operators
     }
     
-    func add(child: RKNode) {
+    public func add(child: RKNode) {
         children.append(child)
         child.parent = self
     }
@@ -35,7 +35,7 @@ class RKNode<T> {
 
 /// This extension converts `RKNode` into readable `String`.
 extension RKNode: CustomStringConvertible {
-    var description: String {
+    public var description: String {
         var text = "\(value)"
         
         if !children.isEmpty {
@@ -47,7 +47,7 @@ extension RKNode: CustomStringConvertible {
 
 /// This extension allows search with `value` for `RKNode`.
 extension RKNode where T: Equatable {
-    func search(value: T) -> RKNode? {
+    public func search(value: T) -> RKNode? {
         if value == self.value {
             return self
         }
@@ -71,7 +71,7 @@ public struct RKRift {
         - input: A RKNode initialized with a `Int`
      - Returns: The result of the operation with type `Int`
      */
-    func evaluateInt(for input: RKNode<Int>) throws -> Int {
+    public func evaluateInt(for input: RKNode<Int>) throws -> Int {
         if input.children.count == 2 {
             if input.children[0].children.count == 0 && input.children[1].children.count == 0 {
                 if let operation = input.operators {
@@ -102,7 +102,7 @@ public struct RKRift {
        - input: A RKNode initialized with a `Float`
     - Returns: The result of the operation with type `Float`
     */
-    func evaluateFloat(for input: RKNode<Float>) throws -> Float {
+    public func evaluateFloat(for input: RKNode<Float>) throws -> Float {
         if input.children.count == 2 {
             if input.children[0].children.count == 0 && input.children[1].children.count == 0 {
                 if let operation = input.operators {
@@ -133,7 +133,7 @@ public struct RKRift {
        - input: A RKNode initialized with a `Double`
     - Returns: The result of the operation with type `Double`
     */
-    func evaluateDouble(for input: RKNode<Double>) throws -> Double {
+    public func evaluateDouble(for input: RKNode<Double>) throws -> Double {
         if input.children.count == 2 {
             if input.children[0].children.count == 0 && input.children[1].children.count == 0 {
                 if let operation = input.operators {

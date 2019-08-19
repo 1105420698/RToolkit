@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RunkaiKit Structure Reference</title>
+    <title>RKRift Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/RunkaiKit" class="dashAnchor"></a>
-    <a title="RunkaiKit Structure Reference"></a>
+    <a name="//apple_ref/swift/Struct/RKRift" class="dashAnchor"></a>
+    <a title="RKRift Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (58% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        RunkaiKit Structure Reference
+        RKRift Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -59,14 +59,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>RunkaiKit</h1>
+            <h1>RKRift</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RunkaiKit</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RKRift</span></code></pre>
 
                 </div>
               </div>
-            <p>The main structure of RunkaiKit where most of the general functions rests.</p>
+            <p>R(unkai)(s)ift, made by Runkai, on Swift</p>
 
           </section>
           <section class="section task-group-section">
@@ -75,9 +75,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9RunkaiKitAAV013retrieveCloudB6Record14withIdentifier6publicSo8CKRecordCSS_SbtKF"></a>
-                    <a name="//apple_ref/swift/Method/retrieveCloudKitRecord(withIdentifier:public:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9RunkaiKitAAV013retrieveCloudB6Record14withIdentifier6publicSo8CKRecordCSS_SbtKF">retrieveCloudKitRecord(withIdentifier:public:)</a>
+                    <a name="/s:9RunkaiKit6RKRiftV11evaluateInt3forSiAA6RKNodeCySiG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/evaluateInt(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit6RKRiftV11evaluateInt3forSiAA6RKNodeCySiG_tKF">evaluateInt(for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -85,136 +85,47 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retrieve the corresponding record with the given id. Throws an error when encounters one.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">retrieveCloudKitRecord</span><span class="p">(</span><span class="n">withIdentifier</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">public</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">CKRecord</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>id</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The id that is going to be used.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>public</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The location of the target database can be either public or private.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9RunkaiKitAAV17isIcloudAvailableSbyF"></a>
-                    <a name="//apple_ref/swift/Method/isIcloudAvailable()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9RunkaiKitAAV17isIcloudAvailableSbyF">isIcloudAvailable()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Detect whether this is the device as an iCloud account logged on.</p>
-
-<p>Just place this function in the <code>viewDidLoad()</code> or <code>AppDelegate</code> of your app to use it.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isIcloudAvailable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A <code>Bool</code> to indicate whether this is the device as an iCloud account logged on.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9RunkaiKitAAV12retrieveHTML4fromS2S_tF"></a>
-                    <a name="//apple_ref/swift/Method/retrieveHTML(from:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9RunkaiKitAAV12retrieveHTML4fromS2S_tF">retrieveHTML(from:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Retrieve the raw HTML code from the URL provided.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">retrieveHTML</span><span class="p">(</span><span class="n">from</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>url</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A string containing the URL of your target webpage.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p></p>
-
-<ul>
-<li>The HTML in its <code>String</code> form if the process succeeds.</li>
-<li>An error if it the process fails.</li>
-<li>An error if the input is not a valid URL.</li>
+                        <p>Use this function to evaluate the <code>children</code> of a <code><a href="../Classes/RKNode.html">RKNode</a></code></p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <ul>
+<li>This version of RunkaiKit only supports <strong>2</strong> <code>children</code></li>
+<li>The <code>children</code> <strong>cannot</strong> have any of their own <code>children</code></li>
 </ul>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">evaluateInt</span><span class="p">(</span><span class="k">for</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Classes/RKNode.html">RKNode</a></span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A RKNode initialized with a <code>Int</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the operation with type <code>Int</code></p>
                       </div>
                     </section>
                   </div>
@@ -222,9 +133,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9RunkaiKitAAV17isFirstTimeLaunchSbyF"></a>
-                    <a name="//apple_ref/swift/Method/isFirstTimeLaunch()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9RunkaiKitAAV17isFirstTimeLaunchSbyF">isFirstTimeLaunch()</a>
+                    <a name="/s:9RunkaiKit6RKRiftV13evaluateFloat3forSfAA6RKNodeCySfG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/evaluateFloat(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit6RKRiftV13evaluateFloat3forSfAA6RKNodeCySfG_tKF">evaluateFloat(for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -232,20 +143,105 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Detect whether this is the first time this app ever launched.</p>
+                        <p>Use this function to evaluate the <code>children</code> of a <code><a href="../Classes/RKNode.html">RKNode</a></code></p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <ul>
+<li>This version of RunkaiKit only supports <strong>2</strong> <code>children</code></li>
+<li>The <code>children</code> <strong>cannot</strong> have any of their own <code>children</code></li>
+</ul>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isFirstTimeLaunch</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">evaluateFloat</span><span class="p">(</span><span class="k">for</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Classes/RKNode.html">RKNode</a></span><span class="o">&lt;</span><span class="kt">Float</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
 
                         </div>
                       </div>
                       <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A RKNode initialized with a <code>Float</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
                         <h4>Return Value</h4>
-                        <p>A <code>Bool</code> to indicate whether this is the first time this app ever launched.</p>
+                        <p>The result of the operation with type <code>Float</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit6RKRiftV14evaluateDouble3forSdAA6RKNodeCySdG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/evaluateDouble(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit6RKRiftV14evaluateDouble3forSdAA6RKNodeCySdG_tKF">evaluateDouble(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use this function to evaluate the <code>children</code> of a <code><a href="../Classes/RKNode.html">RKNode</a></code></p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <ul>
+<li>This version of RunkaiKit only supports <strong>2</strong> <code>children</code></li>
+<li>The <code>children</code> <strong>cannot</strong> have any of their own <code>children</code></li>
+</ul>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">evaluateDouble</span><span class="p">(</span><span class="k">for</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Classes/RKNode.html">RKNode</a></span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A RKNode initialized with a <code>Double</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The result of the operation with type <code>Double</code></p>
                       </div>
                     </section>
                   </div>

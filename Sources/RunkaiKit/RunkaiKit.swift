@@ -37,6 +37,27 @@ public struct RunkaiKit {
     }
     
     /**
+    Detect whether this is the device as an iCloud account logged on.
+    
+     Just place this function in the `viewDidLoad()` or `AppDelegate` of your app to use it.
+    - Returns: A `Bool` to indicate whether this is the device as an iCloud account logged on.
+    */
+    public func isIcloudAvailable() -> Bool {
+        var result: Bool?
+        
+        CKContainer.default().accountStatus(completionHandler: { accountStatus, error in
+            if accountStatus == .noAccount {
+                result = false
+            } else {
+                result = true
+            }
+        })
+        
+        return result!
+    }
+    #endif
+    
+    /**
      Retrieve the raw HTML code from the URL provided.
      - parameters:
         - url: A string containing the URL of your target webpage.
@@ -59,27 +80,6 @@ public struct RunkaiKit {
             return error.localizedDescription
         }
     }
-    
-    /**
-    Detect whether this is the device as an iCloud account logged on.
-    
-     Just place this function in the `viewDidLoad()` or `AppDelegate` of your app to use it.
-    - Returns: A `Bool` to indicate whether this is the device as an iCloud account logged on.
-    */
-    public func isIcloudAvailable() -> Bool {
-        var result: Bool?
-        
-        CKContainer.default().accountStatus(completionHandler: { accountStatus, error in
-            if accountStatus == .noAccount {
-                result = false
-            } else {
-                result = true
-            }
-        })
-        
-        return result!
-    }
-    #endif
     
     /**
      Detect whether this is the first time this app ever launched.

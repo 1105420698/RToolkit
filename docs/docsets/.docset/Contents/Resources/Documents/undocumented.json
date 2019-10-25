@@ -1,6 +1,26 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/runkai/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 32,
+      "symbol": "RKNode.init(value:operator:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 37,
+      "symbol": "RKNode.add(child:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runkai/RunkaiKit/Sources/RunkaiKit/Rift.swift",
+      "line": 57,
+      "symbol": "RKNode.search(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
-  "source_directory": "/Users/runkai/Documents/XcodeProjects/RunkaiKit"
+  "source_directory": "/Users/runkai/RunkaiKit"
 }

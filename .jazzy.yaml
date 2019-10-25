@@ -1,0 +1,7 @@
+author: Runkai Zhang
+author_url: https://www.runkaizhang.xyz/
+github_url: https://github.com/1105420698/RunkaiKit
+root_url: https://kit.runkaizhang.xyz
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-project, 'RunkaiKit.xcodeproj', -scheme, 'RunkaiKit-Package']

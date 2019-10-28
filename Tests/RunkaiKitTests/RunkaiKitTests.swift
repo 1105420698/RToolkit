@@ -9,8 +9,13 @@ final class RunkaiKitTests: XCTestCase {
             XCTAssertEqual(result.last, 25, "This should be exactly the same!")
         }
     }
+    
+    func testRunkaiKit() {
+        
+    }
 
     static var allTests = [
         ("testMath", testMath),
+        ("testMath", testRunkaiKit),
     ]
 }

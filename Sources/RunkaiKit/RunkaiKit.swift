@@ -39,11 +39,11 @@ public struct RunkaiKit {
     /**
     Detect whether this is the device as an iCloud account logged on.
     
-     Just place this function in the `viewDidLoad()` or `AppDelegate` of your app to use it.
+    Just place this function in the `viewDidLoad()` or `AppDelegate` of your app to use it.
     - Returns: A `Bool` to indicate whether this is the device as an iCloud account logged on.
     */
     public func isIcloudAvailable() -> Bool {
-        var result: Bool?
+        var result = Bool()
         
         CKContainer.default().accountStatus(completionHandler: { accountStatus, error in
             if accountStatus == .noAccount {
@@ -53,7 +53,7 @@ public struct RunkaiKit {
             }
         })
         
-        return result!
+        return result
     }
     #endif
     

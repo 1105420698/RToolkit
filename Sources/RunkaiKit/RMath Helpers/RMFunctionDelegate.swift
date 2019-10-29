@@ -9,5 +9,5 @@ import Foundation
 
 /// Use this delegate to monitor `RMFunction` status and progress.
 public protocol RMFunctionDelegate {
-    func calculationInSession(_ id: [String:Int])
+    func calculationProgress(_ id: [String:Int])
 }

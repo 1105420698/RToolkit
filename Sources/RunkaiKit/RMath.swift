@@ -50,7 +50,7 @@ public struct RMFunction {
             var result = [Int:Double]()
             
             for x in self.xRange {
-                delegate?.calculationInSession([self.id:(xUpperBound - x + 1)])
+                delegate?.calculationInSession([self.id:(x - xLowerBound + 1)])
                 if x != xUpperBound {
                     let answer = k * pow(Double(x), n)
                     result[x] = answer

@@ -53,11 +53,9 @@ public struct RMFunction {
             for x in self.xRange {
                 delegate?.calculationProgress([self.id:(x - xLowerBound + 1)])
                 if x != xUpperBound {
-                    let answer = k * pow(Double(x), n)
-                    result[x] = answer
+                    result[x] = resultFor(x: x)
                 } else {
-                    let answer = k * pow(Double(x), n)
-                    result[x] = answer
+                    result[x] = resultFor(x: x)
                 }
             }
             
@@ -66,14 +64,23 @@ public struct RMFunction {
         }
         
         /// Calculate the function with its values it has but applied with transitions.
+        /// - parameters:
+        ///     - x: Use this number to shift the vertex of the graph **horizontally**.
+        ///     - y: Use this number to shift the vertex of the graph **vertically**.
+        ///     - completionHandler: Handles whatever happens after the translation is completed. =
         public func translation(x: Int, y: Double, completionHandler: ([Int:Double]) -> Void) {
             let unmodified = self.calculate(completionHandler: nil)
             var result = [Int:Double]()
             for number in unmodified {
-                result[number.key - x] = number.value + y
+                result[number.key + x] = number.value + y
             }
             
             completionHandler(result)
+        }
+        
+        /// Calculate the function with a give `x` value.
+        public func resultFor(x: Int) -> Double {
+            return k * pow(Double(x), n)
         }
     }
 }

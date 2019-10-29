@@ -11,7 +11,7 @@ final class RunkaiKitTests: XCTestCase {
         
         let _ = power.calculate(completionHandler: nil)
         
-        power.translation(x: 5, y: 0) { (result) in
+        power.translation(x: -5, y: 0) { (result) in
             XCTAssertEqual(result, [-10:25, -9:16, -8:9, -7:4, -6:1, -5:0, -4:1, -3:4, -2:9, -1:16, 0:25], "This should be exactly the same!")
         }
         

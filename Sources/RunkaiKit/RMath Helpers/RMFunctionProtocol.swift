@@ -19,4 +19,6 @@ public protocol RMFunctionProtocol {
     var xUpperBound: Int { get set }
     /// Calculate the function with its values it has but applied with transitions.
     func translation(x: Int, y: Double, completionHandler: ([Int:Double]) -> Void)
+    /// Calculate the function with a give `x` value.
+    func resultFor(x: Int) -> Double
 }

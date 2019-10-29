@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RMFunction Structure Reference</title>
+    <title>RMFunctionDelegate Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/RMFunction" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/RMFunctionDelegate" class="dashAnchor"></a>
 
-    <a title="RMFunction Structure Reference"></a>
+    <a title="RMFunctionDelegate Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      RMFunction Structure Reference
+      RMFunctionDelegate Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -106,14 +106,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>RMFunction</h1>
+            <h1>RMFunctionDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RMFunction</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RMFunctionDelegate</span></code></pre>
 
                 </div>
               </div>
-            <p>A structure that contains all of the RMath functions.</p>
+            <p>Use this delegate to monitor <code><a href="../Structs/RMFunction.html">RMFunction</a></code> status and progress.</p>
 
           </div>
         </section>
@@ -125,9 +125,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9RunkaiKit10RMFunctionV5powerC"></a>
-                    <a name="//apple_ref/swift/Class/power" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC">power</a>
+                    <a name="/s:9RunkaiKit18RMFunctionDelegateP19calculationProgressyySDySSSiGF"></a>
+                    <a name="//apple_ref/swift/Method/calculationProgress(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit18RMFunctionDelegateP19calculationProgressyySDySSSiGF">calculationProgress(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -135,15 +135,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A power function, where both k and n are constants, creates a parabola when graphed.</p>
+                        <p>Outputs the progress of a <code>calculate()</code> function.</p>
 
-                        <a href="../Structs/RMFunction/power.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">power</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/RMFunctionProtocol.html">RMFunctionProtocol</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">calculationProgress</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>

@@ -13,7 +13,8 @@ public struct RMFunction {
     /// A power function, where both k and n are constants, creates a parabola when graphed.
     public class power: RMFunctionProtocol {
         
-        var delegate: RMFunctionDelegate?
+        /// The `RMFunctionDelegate` that will be handling this function's status.
+        public var delegate: RMFunctionDelegate?
         
         /// The id for this function, can be any `Int` number as long as it is unique.
         public var id: String
@@ -50,7 +51,7 @@ public struct RMFunction {
             var result = [Int:Double]()
             
             for x in self.xRange {
-                delegate?.calculationInSession([self.id:(x - xLowerBound + 1)])
+                delegate?.calculationProgress([self.id:(x - xLowerBound + 1)])
                 if x != xUpperBound {
                     let answer = k * pow(Double(x), n)
                     result[x] = answer
@@ -64,7 +65,7 @@ public struct RMFunction {
             return result
         }
         
-        /// Calculate the power function with its values it has but applied with transitions.
+        /// Calculate the function with its values it has but applied with transitions.
         public func translation(x: Int, y: Double, completionHandler: ([Int:Double]) -> Void) {
             let unmodified = self.calculate(completionHandler: nil)
             var result = [Int:Double]()

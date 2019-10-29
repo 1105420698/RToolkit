@@ -73,6 +73,17 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/RMFunctionDelegate.html">RMFunctionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../../Protocols/RMFunctionProtocol.html">RMFunctionProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="../../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -98,11 +109,11 @@
             <h1>power</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="n">power</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">power</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/RMFunctionProtocol.html">RMFunctionProtocol</a></span></code></pre>
 
                 </div>
               </div>
-            <p>A power function, where both k and n are constants, creates a parabola.</p>
+            <p>A power function, where both k and n are constants, creates a parabola when graphed.</p>
 
           </div>
         </section>
@@ -111,6 +122,60 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit10RMFunctionV5powerC8delegateAA0C8Delegate_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC8delegateAA0C8Delegate_pSgvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../../Protocols/RMFunctionDelegate.html">RMFunctionDelegate</a></code> that will be handling this function&rsquo;s status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../../Protocols/RMFunctionDelegate.html">RMFunctionDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit10RMFunctionV5powerC2idSSvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC2idSSvp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id for this function, can be any <code>Int</code> number as long as it is unique.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -124,7 +189,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A constant.</p>
+                        <p>A constant, the multiplier of <code>x</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -222,9 +287,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9RunkaiKit10RMFunctionV5powerC9calculate17completionHandleryySaySdGXE_tF"></a>
-                    <a name="//apple_ref/swift/Method/calculate(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC9calculate17completionHandleryySaySdGXE_tF">calculate(completionHandler:)</a>
+                    <a name="/s:9RunkaiKit10RMFunctionV5powerC6xRangeSNySiGvp"></a>
+                    <a name="//apple_ref/swift/Property/xRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC6xRangeSNySiGvp">xRange</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -232,14 +297,150 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Calculate the power function with the values it has.</p>
+                        <p>The <code>Range</code> of <code>x</code> generated from the <code><a href="../../Structs/RMFunction/power.html#/s:9RunkaiKit10RMFunctionV5powerC11xLowerBoundSivp">xLowerBound</a></code> and <code><a href="../../Structs/RMFunction/power.html#/s:9RunkaiKit10RMFunctionV5powerC11xUpperBoundSivp">xUpperBound</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calculate</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="p">([</span><span class="kt">Double</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">xRange</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit10RMFunctionV5powerC6withId1k1n11xLowerBound06xUpperH0AESS_S2dS2itcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withId:k:n:xLowerBound:xUpperBound:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC6withId1k1n11xLowerBound06xUpperH0AESS_S2dS2itcfc">init(withId:k:n:xLowerBound:xUpperBound:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a standard power function with two constants: kx^n</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">withId</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">k</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">n</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">xLowerBound</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">xUpperBound</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>k</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A constant, multiplier of <code>x</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>n</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A constant, exponent of <code>x</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>xLowerBound</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The lower bound of <code>x</code> in the calculation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>xUpperBound</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The upper bound of <code>x</code> in the calculation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit10RMFunctionV5powerC9calculate17completionHandlerSDySiSdGyAHcSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/calculate(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC9calculate17completionHandlerSDySiSdGyAHcSg_tF">calculate(completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the power function with its values it has.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calculate</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="p">(([</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit10RMFunctionV5powerC11translation1x1y17completionHandlerySi_SdySDySiSdGXEtF"></a>
+                    <a name="//apple_ref/swift/Method/translation(x:y:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC11translation1x1y17completionHandlerySi_SdySDySiSdGXEtF">translation(x:y:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the function with its values it has but applied with transitions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">translation</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">([</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -254,7 +455,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://www.runkaizhang.xyz/" target="_blank" rel="external">Runkai Zhang</a>. All rights reserved. (Last updated: 2019-10-27)</p>
+      <p>&copy; 2019 <a class="link" href="https://www.runkaizhang.xyz/" target="_blank" rel="external">Runkai Zhang</a>. All rights reserved. (Last updated: 2019-10-28)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

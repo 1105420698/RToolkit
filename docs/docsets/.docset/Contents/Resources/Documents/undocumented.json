@@ -1,10 +1,10 @@
 {
   "warnings": [
     {
-      "file": "/Users/runkai/RunkaiKit/Sources/RunkaiKit/RMath Helpers/RMFunctionProtocol.swift",
-      "line": 10,
-      "symbol": "RMFunctionProtocol",
-      "symbol_kind": "source.lang.swift.decl.protocol",
+      "file": "/Users/runkai/RunkaiKit/Sources/RunkaiKit/Extensions/String.swift",
+      "line": 12,
+      "symbol": "String.isInt",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],

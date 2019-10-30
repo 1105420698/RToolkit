@@ -62,6 +62,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/RKNode.html">RKNode</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RMFunctionInterpreter.html">RMFunctionInterpreter</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -69,6 +72,14 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/CalculationError.html">CalculationError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
               </li>
             </ul>
           </li>
@@ -90,10 +101,19 @@
                 <a class="nav-group-task-link" href="../Structs/RKRift.html">RKRift</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RMCustomFunctionInput.html">RMCustomFunctionInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RMCustomFunctionOutput.html">RMCustomFunctionOutput</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/RMFunction.html">RMFunction</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/RMFunction/power.html">– power</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RMFunction/custom.html">– custom</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/RunkaiKit.html">RunkaiKit</a>
@@ -113,7 +133,7 @@
 
                 </div>
               </div>
-            <p>The blueprint for all <code><a href="../Structs/RMFunction.html">RMFunction</a></code>s.</p>
+            <p>The blueprint for <code><a href="../Structs/RMFunction.html">RMFunction</a></code>.</p>
 
           </div>
         </section>
@@ -233,6 +253,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:9RunkaiKit18RMFunctionProtocolP6xRangeSNySiGvp"></a>
+                    <a name="//apple_ref/swift/Property/xRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit18RMFunctionProtocolP6xRangeSNySiGvp">xRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>Range</code> of <code>x</code> generated from the <code><a href="../Protocols/RMFunctionProtocol.html#/s:9RunkaiKit18RMFunctionProtocolP11xLowerBoundSivp">xLowerBound</a></code> and <code><a href="../Protocols/RMFunctionProtocol.html#/s:9RunkaiKit18RMFunctionProtocolP11xUpperBoundSivp">xUpperBound</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">xRange</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:9RunkaiKit18RMFunctionProtocolP11translation1x1y17completionHandlerySi_SdySDySiSdGXEtF"></a>
                     <a name="//apple_ref/swift/Method/translation(x:y:completionHandler:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:9RunkaiKit18RMFunctionProtocolP11translation1x1y17completionHandlerySi_SdySDySiSdGXEtF">translation(x:y:completionHandler:)</a>
@@ -257,6 +304,60 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit18RMFunctionProtocolP9resultFor1xSdSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/resultFor(x:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit18RMFunctionProtocolP9resultFor1xSdSi_tF">resultFor(x:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the function with a given <code>x</code> value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resultFor</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit18RMFunctionProtocolP9calculate17completionHandlerSDySiSdGyAFcSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/calculate(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit18RMFunctionProtocolP9calculate17completionHandlerSDySiSdGyAFcSg_tF">calculate(completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the function with the given bounds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">calculate</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="p">(([</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">Double</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -265,7 +366,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://www.runkaizhang.xyz/" target="_blank" rel="external">Runkai Zhang</a>. All rights reserved. (Last updated: 2019-10-28)</p>
+      <p>&copy; 2019 <a class="link" href="https://www.runkaizhang.xyz/" target="_blank" rel="external">Runkai Zhang</a>. All rights reserved. (Last updated: 2019-10-29)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

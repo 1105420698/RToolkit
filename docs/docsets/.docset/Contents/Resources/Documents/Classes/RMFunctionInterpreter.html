@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RMFunction Structure Reference</title>
+    <title>RMFunctionInterpreter Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/RMFunction" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/RMFunctionInterpreter" class="dashAnchor"></a>
 
-    <a title="RMFunction Structure Reference"></a>
+    <a title="RMFunctionInterpreter Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      RMFunction Structure Reference
+      RMFunctionInterpreter Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -126,14 +126,24 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>RMFunction</h1>
+            <h1>RMFunctionInterpreter</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RMFunction</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RMFunctionInterpreter</span></code></pre>
 
                 </div>
               </div>
-            <p>A structure that contains all of the RMath functions.</p>
+            <p>A interpreter that is capable of parsing <code><a href="../Structs/RMCustomFunctionInput.html">RMCustomFunctionInput</a></code>s and convert them to machine understandable types.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This is an experimental feature and is not complete!
+
+</div>
+<div class="aside aside-attention">
+    <p class="aside-title">Attention</p>
+    Currently only supports <code>f(x) = &lt;Other side of equation&gt;</code> format.
+
+</div>
 
           </div>
         </section>
@@ -145,9 +155,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9RunkaiKit10RMFunctionV5powerC"></a>
-                    <a name="//apple_ref/swift/Class/power" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV5powerC">power</a>
+                    <a name="/s:9RunkaiKit21RMFunctionInterpreterC16supportedSymbolsSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/supportedSymbols" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit21RMFunctionInterpreterC16supportedSymbolsSaySSGvp">supportedSymbols</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -155,15 +165,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A power function, where both k and n are constants, creates a parabola when graphed.</p>
+                        <p>A list of supported symbols.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This is an experimental feature and is not complete!
 
-                        <a href="../Structs/RMFunction/power.html" class="slightly-smaller">See more</a>
+</div>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nv">power</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/RMFunctionProtocol.html">RMFunctionProtocol</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">supportedSymbols</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -173,9 +187,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9RunkaiKit10RMFunctionV6customC"></a>
-                    <a name="//apple_ref/swift/Class/custom" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9RunkaiKit10RMFunctionV6customC">custom</a>
+                    <a name="/s:9RunkaiKit21RMFunctionInterpreterC5inputAA21RMCustomFunctionInputVvp"></a>
+                    <a name="//apple_ref/swift/Property/input" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit21RMFunctionInterpreterC5inputAA21RMCustomFunctionInputVvp">input</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -183,20 +197,115 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A custom function.</p>
+                        <p>The input of the interpreter.</p>
 <div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     This is an experimental feature and is not complete!
 
 </div>
 
-                        <a href="../Structs/RMFunction/custom.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="n">custom</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RMCustomFunctionInput.html">RMCustomFunctionInput</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit21RMFunctionInterpreterC5inputAcA21RMCustomFunctionInputV_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(input:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit21RMFunctionInterpreterC5inputAcA21RMCustomFunctionInputV_tcfc">init(input:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a interpreter with a given input.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This is an experimental feature and is not complete!
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RMCustomFunctionInput.html">RMCustomFunctionInput</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit21RMFunctionInterpreterC10interpreteAA22RMCustomFunctionOutputVyF"></a>
+                    <a name="//apple_ref/swift/Method/interprete()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit21RMFunctionInterpreterC10interpreteAA22RMCustomFunctionOutputVyF">interprete()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts the interpreting process and outputs <code><a href="../Structs/RMCustomFunctionOutput.html">RMCustomFunctionOutput</a></code>.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This is an experimental feature and is not complete!
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">interprete</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RMCustomFunctionOutput.html">RMCustomFunctionOutput</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9RunkaiKit21RMFunctionInterpreterC16canBeInterpretedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/canBeInterpreted" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9RunkaiKit21RMFunctionInterpreterC16canBeInterpretedSbvp">canBeInterpreted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Verifies a custom function to decide whether it can be interpreted or not.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This is an experimental feature and is not complete!
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">canBeInterpreted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

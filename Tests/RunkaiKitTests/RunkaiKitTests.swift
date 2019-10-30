@@ -23,12 +23,14 @@ final class RunkaiKitTests: XCTestCase {
         XCTAssertEqual(power.n, Double(2))
     }
     
-    func testRunkaiKit() {
-        
+    func testInterpreter() {
+        let input = RMCustomFunctionInput(value: "x^2 ]]")
+        let interpreter = RMFunctionInterpreter(input: input)
+        XCTAssertEqual(interpreter.canBeInterpreted, false, "This should be false as long as there are unsupported symbols in the input.")
     }
 
     static var allTests = [
         ("testMath", testMath),
-        ("testMath", testRunkaiKit),
+        ("testInterpreter", testInterpreter),
     ]
 }

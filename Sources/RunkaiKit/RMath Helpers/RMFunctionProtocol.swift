@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// The blueprint for all `RMFunction`s.
+/// The blueprint for `RMFunction`.
 public protocol RMFunctionProtocol {
     /// The `RMFunctionDelegate` that will be handling the function's status.
     var delegate: RMFunctionDelegate? { get }
@@ -17,8 +17,12 @@ public protocol RMFunctionProtocol {
     var xLowerBound: Int { get set }
     /// The upper bound of `x` in the calculation.
     var xUpperBound: Int { get set }
+    /// The `Range` of `x` generated from the `xLowerBound` and `xUpperBound`.
+    var xRange: ClosedRange<Int> { get set }
     /// Calculate the function with its values it has but applied with transitions.
     func translation(x: Int, y: Double, completionHandler: ([Int:Double]) -> Void)
-    /// Calculate the function with a give `x` value.
+    /// Calculate the function with a given `x` value.
     func resultFor(x: Int) -> Double
+    /// Calculate the function with the given bounds.
+    func calculate(completionHandler: (([Int:Double]) -> Void)?) -> [Int:Double]
 }

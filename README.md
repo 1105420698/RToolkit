@@ -9,5 +9,5 @@ List of features:
 - RMath - a math library containing functions that performs Algebra and Calculus operations _incomplete_
 
 Roadmap:
-- [ ] Make Rift flexible to accomodate all your needs.
+- [ ] Make Rift flexible to accommodate all your needs.
 - [ ] Add complex functions into RMath to allow people to actually use RMath.

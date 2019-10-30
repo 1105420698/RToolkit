@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// The custom function that is interpreted.
+/// The custom function that is already interpreted and ready for calculation.
 /// - Warning: This is an experimental feature and is not complete!
 public struct RMCustomFunctionOutput {
     /// The output value.

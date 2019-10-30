@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/runkai/RunkaiKit/Sources/RunkaiKit/Extensions/String.swift",
-      "line": 12,
-      "symbol": "String.isInt",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/runkai/RunkaiKit"
 }

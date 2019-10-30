@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// A interpreter that is capable of parsing `RMCustomFunctionInput`s and convert them to machine understandable types.
+/// A interpreter that is capable of parsing `RMCustomFunctionInput` and convert them to machine understandable types.
 /// - Warning: This is an experimental feature and is not complete!
 /// - attention: Currently only supports `f(x) = <Other side of equation>` format.
 public class RMFunctionInterpreter {

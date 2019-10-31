@@ -1,7 +1,7 @@
 ![image](https://github.com/1105420698/RunkaiKit/raw/master/cover.png)
 # RunkaiKit
 
-![badge](docs/badge.svg)
+![badge](https://github.com/1105420698/RunkaiKit/blob/master/docs/badge.svg)
 
 RunkaiKit allows developers to gain access to a lot of useful tools for Swift. 
 

@@ -1,3 +1,9 @@
+//
+//  RunkaiKit.swift
+//  RunkaiKit
+//
+//  Created by Runkai Zhang on 8/19/19.
+//
 
 #if canImport(CloudKit)
 import CloudKit
@@ -5,7 +11,7 @@ import CloudKit
 
 /// The main structure of RunkaiKit where most of the general functions rests.
 public struct RunkaiKit {
-    
+
     #if canImport(CloudKit)
     /**
      Retrieve the corresponding record with the given id. Throws an error when encounters one.
@@ -13,12 +19,12 @@ public struct RunkaiKit {
         - id: The id that is going to be used.
         - public: The location of the target database can be either public or private.
       */
-    public func retrieveCloudKitRecord(withIdentifier id: String, public: Bool) throws -> CKRecord  {
+    public func retrieveCloudKitRecord(withIdentifier id: String, public: Bool) throws -> CKRecord {
         var record: CKRecord?
         var error: Error?
         let publicDatabase = CKContainer.default().publicCloudDatabase
         let recordID = CKRecord.ID(recordName: id)
-        
+
         publicDatabase.fetch(withRecordID: recordID, completionHandler: { recordRetrieved, errorReceived in
             if let errorReceived = errorReceived {
                 error = errorReceived
@@ -26,7 +32,7 @@ public struct RunkaiKit {
                 record = recordRetrieved
             }
         })
-        
+
         if let error = error {
             throw error
         } else if let record = record {
@@ -35,7 +41,7 @@ public struct RunkaiKit {
             throw error!
         }
     }
-    
+
     /**
     Detect whether this is the device as an iCloud account logged on.
     
@@ -44,19 +50,19 @@ public struct RunkaiKit {
     */
     public func isIcloudAvailable() -> Bool {
         var result = Bool()
-        
-        CKContainer.default().accountStatus(completionHandler: { accountStatus, error in
+
+        CKContainer.default().accountStatus(completionHandler: { accountStatus, _ in
             if accountStatus == .noAccount {
                 result = false
             } else {
                 result = true
             }
         })
-        
+
         return result
     }
     #endif
-    
+
     /**
      Retrieve the raw HTML code from the URL provided.
      - parameters:
@@ -80,7 +86,7 @@ public struct RunkaiKit {
             return error.localizedDescription
         }
     }
-    
+
     /**
      Detect whether this is the first time this app ever launched.
      - Returns: A `Bool` to indicate whether this is the first time this app ever launched.
@@ -95,5 +101,3 @@ public struct RunkaiKit {
         }
     }
 }
-
-

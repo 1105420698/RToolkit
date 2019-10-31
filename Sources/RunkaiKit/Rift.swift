@@ -23,18 +23,18 @@ public class RKNode<T> {
     public var value: T
     /// The parent of the `RKNode`.
     public weak var parent: RKNode?
-    
+
     /// Specify the children of the `RKNode` here.
     public var children: [RKNode] = []
     /// Specify the operator of the `RKNode` here.
     public var operatorInput: String?
-    
+
     /// Obtains a basic `RKNode`.
     public init(value: T, operator operatorInput: String?) {
         self.value = value
         self.operatorInput = operatorInput
     }
-    
+
     /// Adding a child to the `RKNode`.
     public func add(child: RKNode) {
         children.append(child)
@@ -46,7 +46,7 @@ public class RKNode<T> {
 extension RKNode: CustomStringConvertible {
     public var description: String {
         var text = "\(value)"
-        
+
         if !children.isEmpty {
             text += " (" + children.map { $0.description }.joined(separator: ", ") + ") "
         }
@@ -102,7 +102,7 @@ public struct RKRift {
             throw CalculationError.inputOverflow
         }
     }
-    
+
     /**
     Use this function to evaluate the `children` of a `RKNode`
     - warning:
@@ -133,7 +133,7 @@ public struct RKRift {
             throw CalculationError.inputOverflow
         }
     }
-    
+
     /**
     Use this function to evaluate the `children` of a `RKNode`
     - warning:

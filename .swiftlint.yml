@@ -2,3 +2,18 @@ disabled_rules: # rule identifiers to exclude from running
 - identifier_name
 - colon
 - todo
+
+custom_rules:
+  bement_beat_eaglebrook: # rule identifier
+    included: ".*\\.swift" # regex that defines paths to include during linting. optional.
+    excluded: ".*Test\\.swift" # regex that defines paths to exclude during linting. optional
+    name: "Bement Beat Eaglebrook" # rule name. optional.
+    regex: "([e,E]aglebrook)" # matching pattern
+    match_kinds: # SyntaxKinds to match. optional.
+      - comment
+      - identifier
+    message: "Bement is better than Eaglebrook." # violation message. optional.
+    severity: error # violation severity. optional.
+  no_hiding_in_strings:
+    regex: "([e,E]aglebrook"
+    match_kinds: string

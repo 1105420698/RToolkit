@@ -23,6 +23,20 @@ final class RunkaiKitTests: XCTestCase {
         XCTAssertEqual(power.n, Double(2))
     }
     
+    func testABS() {
+        let testDouble = [-24, 0.333, -0.2809, 111]
+        
+        var resultDouble = [Double]()
+        
+        let expectedDouble = [24, 0.333, 0.2809, 111]
+        
+        for n in testDouble {
+            resultDouble.append(RunkaiKit().rabs(n))
+        }
+        
+        XCTAssertEqual(resultDouble, expectedDouble)
+    }
+    
     func testInterpreter() {
         let input = RMCustomFunctionInput(value: "x^2 ]]")
         let interpreter = RMFunctionInterpreter(input: input)

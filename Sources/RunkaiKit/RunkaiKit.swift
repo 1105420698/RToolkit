@@ -94,6 +94,15 @@ public struct RunkaiKit {
            return true
         }
     }
+    
+    /**
+        Literally abs(), but only for `Float` types.
+        - Returns: The input but positive.
+    */
+    
+    public func rabs<T: FloatingPoint>(_ n: T) -> T {
+        return (n * (n < 0 ? -1 : 1))
+    }
 }
 
 
